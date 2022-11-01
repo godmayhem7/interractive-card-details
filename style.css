@@ -1,0 +1,256 @@
+body::before{
+    content: "";
+    background-image: url(images/bg-main-desktop.png);
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 1000px;
+    z-index: 0;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 10000;
+}
+
+body{
+    background-color: rgb(197, 193, 193);
+    width: 300px;
+    height: 100%;
+}
+
+.first-section{
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 447px;
+    height:245px;
+    border-radius: 10px;
+    background-image: url(images/bg-card-front.png);
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    font-family:Space Grotesk;
+    box-sizing: border-box;
+}
+
+.cvc{
+    text-align: end;
+    padding-top: 110px;
+    color:white;
+    padding-right: 47px;
+}
+
+.card-num{
+    color: white;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    letter-spacing: 2px;
+}
+
+.logo{
+    width: 130px;
+    padding: 20px 0 35px 35px;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.second-section{
+    width: 447px;
+    height:245px;
+    background-image: url(images/bg-card-back.png);
+    margin-top: 30px;
+    margin-left: 85px;
+}
+
+.form-bits{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label{
+    font-size:12px;
+}
+
+.name,
+.number{
+    width: 350px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: hsl(279, 6%, 55%) 1px solid;
+    cursor: pointer;
+}
+
+.name:active,
+.number:active{
+    outline: hsl(279, 84%, 38%) 1px solid;
+}
+
+.name:hover,
+.number:hover{
+    outline: hsl(279, 84%, 38%) 1px solid;
+}
+
+.name::placeholder,
+.number::placeholder{
+    font-size: medium;
+}
+
+.des{
+    width:113px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: hsl(279, 6%, 55%) 1px solid;
+}
+
+.des::placeholder{
+    font-size: medium;
+}
+
+.des:active{
+    outline: hsl(279, 84%, 38%) 1px solid;
+}
+
+.des:hover{
+    outline: hsl(279, 84%, 38%) 1px solid;
+    cursor: pointer;
+}
+
+
+.cvc-container{
+    margin-left: 5px;
+}
+
+
+.main-2-container{
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+.submit-btn{
+    width: 345px;
+    height: 40px;
+    font-size: medium;
+    color: white;
+    background-color:  hsl(278, 68%, 11%);
+    border: none;
+    border-radius: 10px;
+}
+
+.compliment{
+    color:hsl(279, 6%, 55%);
+}
+
+.footer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.none{
+    display: none;
+}
+
+h1{
+    margin: 10px 0 10px 0;
+}
+
+b{
+    font-weight: 500;
+}
+
+.hint{
+    color:red;
+    font-size:10px; 
+    letter-spacing: 1px;
+}
+
+@media  screen and (max-width:380px){
+    body::before{
+        content: "";
+        background-image: url(images/bg-main-desktop.png);
+        position:fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 500px;
+        z-index: 0;
+    
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 10000;
+    }
+
+    .sect-cover{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-2-container{
+        margin: 180px 30px 0 50px;
+    }
+
+    .second-section{
+        width: 447px;
+        height:245px;
+        background-image: url(images/bg-card-back.png);
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+
+    .first-section{
+        top: 130px;
+        right: 20px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 447px;
+        height:245px;
+        border-radius: 10px;
+        background-image: url(images/bg-card-front.png);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cvc{
+        position:inherit;
+        text-align: end;
+        padding-top: 95px;
+        color:white;
+        padding-right: 47px;
+        z-index: 3000000;
+    }
+}
